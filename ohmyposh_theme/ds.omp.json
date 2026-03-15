@@ -29,7 +29,7 @@
           "foreground": "#100e23",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else if .Venv }}{{ .Venv }}{{ end }} ",
           "properties": {
             "home_enabled": true
           },
@@ -83,3 +83,4 @@
   "final_space": true,
   "version": 4
 }
+
